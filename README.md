@@ -44,7 +44,7 @@ NeuroFoco/
 ├─ music/              # Sons binaurais
 │   ├─ 432hz.mp3
 │   ├─ 528hz.mp3
- |    ├─ 528hz.mp3
+ |  ├─  15hz.mp3
 │   └─ 741hz.mp3
 │
 ├─ img/
