@@ -1,0 +1,148 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* LOGO */
+img {
+  width: 200px;
+  margin-bottom: 25px;
+
+  filter: 
+    drop-shadow(0 0 5px #00c6ff)
+    drop-shadow(0 0 10px #00c6ff)
+    drop-shadow(0 0 20px #00c6ff)
+    drop-shadow(0 0 40px #0072ff);
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  color: #00c6ff;
+
+  /* brilho */
+  text-shadow:
+    0 0 5px #00c6ff,
+    0 0 10px #00c6ff,
+    0 0 20px #00c6ff,
+    0 0 40px #0072ff;
+}
+.titulo {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 5px rgba(0,198,255,0.8),
+    0 0 15px rgba(0,114,255,0.6);
+}
+
+/* SUBTEXTO */
+p {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+/* BOTÃO */
+button {
+  padding: 14px 36px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+
+  background-color: #00c6ff;
+  color: #ffffff;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+button:hover {
+  background-color: #0072ff;
+  transform: scale(1.05);
+}
+
+/*botao de selecao de nivel*/
+
+select {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*audios*/
+
+
+.audio-controls {
+  margin-bottom: 20px;
+}
+
+.audio-controls button {
+  margin: 5px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #ccc;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.audio-controls button:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+/* CLIQUE */
+.audio-controls button:active {
+  transform: scale(0.95);
+}
+
+/* ATIVO */
+.audio-controls button.ativo {
+  background: #00c853;
+  color: #fff;
+  box-shadow: 0 0 10px #00c853;
+}
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}

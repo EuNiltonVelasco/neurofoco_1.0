@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>NeuroFoco</title>
+
+  <!-- LINK DO CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="titulo">NeuroFoco</h1>
+
+<div class="logo">
+  <img src="logo.png" alt="">
+</div>
+
+<img src="img/logo.png" alt="NeuroFoco">
+
+<h1>Destrave todo o seu potencial</h1>
+
+<p>Treine seu cérebro, desenvolva foco e evolua sua lógica de programação</p>
+
+<button onclick="iniciar()">START</button>
+
+<script>
+function iniciar() {
+  let nivel = parseInt(localStorage.getItem("nivel")) || 1;
+
+  let tempo = 120;
+
+  if (nivel === 2) tempo = 120;
+  if (nivel === 3) tempo = 180;
+
+  localStorage.setItem("tempoSessao", tempo);
+
+  window.location.href = "html/sessao.html";
+}
+</script>
+
+<p></p>
+
+</body>
+</html>

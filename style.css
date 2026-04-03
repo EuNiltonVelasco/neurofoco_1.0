@@ -1,0 +1,258 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+
+  /* fundo mais sólido e elegante */
+  background: #020617;
+}
+
+/* LOGO */
+img {
+  width: 200px;
+  margin-bottom: 25px;
+
+  filter: 
+    drop-shadow(0 0 5px #00c6ff)
+    drop-shadow(0 0 10px #00c6ff)
+    drop-shadow(0 0 20px #00c6ff)
+    drop-shadow(0 0 40px #0072ff);
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 5px rgba(0,198,255,0.8),
+    0 0 15px rgba(0,114,255,0.6);
+}
+
+/* SUBTEXTO */
+p {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+/* BOTÃO PADRÃO */
+button {
+  padding: 14px 36px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+
+  background-color: #00c6ff;
+  color: #ffffff;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER GLOBAL */
+button:hover {
+  background-color: #0072ff;
+  transform: scale(1.05);
+}
+
+/* SELECT */
+select {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* ÁUDIO - BOTÕES ESPECÍFICOS */
+/* ========================= */
+
+.audio-controls {
+  margin-bottom: 20px;
+}
+
+.audio-controls button {
+  margin: 5px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+
+  background: #ccc;
+  color: #000;
+
+  transition: all 0.25s ease;
+}
+
+.audio-controls button:hover {
+  transform: scale(1.12);
+  background: #ffffff;
+}
+
+.audio-controls button:active {
+  transform: scale(0.92);
+}
+
+.audio-controls button.ativo {
+  background: #00c853 !important;
+  color: #fff !important;
+  box-shadow: 0 0 15px #00c853;
+  transform: scale(1.08);
+}
+
+/* ========================= */
+/* BOTÃO INICIAR (AGORA TOP) */
+/* ========================= */
+
+.start {
+  padding: 14px 36px;
+  border-radius: 30px;
+  border: none;
+
+  background: #00c853;
+  color: #fff;
+
+  cursor: pointer;
+  margin-top: 15px;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 0 15px #00c853;
+
+  /* 🔥 ANIMAÇÃO ATIVA */
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* HOVER */
+.start:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 30px #00c853;
+}
+
+/* CLIQUE */
+.start:active {
+  transform: scale(0.92);
+}
+
+/* ANIMAÇÃO SUAVE */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #00c853;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 30px #00c853;
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 10px #00c853;
+    transform: scale(1);
+  }
+}
+
+/* TÍTULO H3 */
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+#mensagemFoco {
+  margin-top: 25px;
+}
+
+/* ========================= */
+/* MELHORIA BOTÕES SESSÃO */
+/* ========================= */
+
+/* deixa botões menores e mais modernos */
+.audio-controls button {
+  padding: 8px 16px;        /* menor */
+  font-size: 0.85em;        /* menor texto */
+
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: #fff;
+
+  box-shadow: 0 0 8px rgba(59,130,246,0.6);
+}
+
+/* hover mais bonito */
+.audio-controls button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px rgba(59,130,246,0.9);
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+}
+
+/* botão ativo mais forte (efeito app) */
+.audio-controls button.ativo {
+  background: linear-gradient(90deg, #16a34a, #22c55e) !important;
+  box-shadow: 0 0 20px #22c55e;
+}
+
+/* ========================= */
+/* MINI DESAFIO (não tinha estilo) */
+/* ========================= */
+
+#miniDesafio {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ========================= */
+/* AJUSTE FINO DO START */
+/* ========================= */
+
+/* deixa o botão start mais proporcional */
+.start {
+  padding: 12px 28px;   /* menor que antes */
+  font-size: 16px;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+#mensagemFoco {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#timer {
+  font-size: 50px;
+  text-align: center;
+}

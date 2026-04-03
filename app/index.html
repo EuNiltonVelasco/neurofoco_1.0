@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>NeuroFoco MVP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="logo-header">
+    <img src="img/logo.png" alt="NeuroFoco">
+    <h1>NeuroFoco</h1>
+  </header>
+
+  <!-- BOTÃO 15Hz -->
+  <button id="toggleHz">Estímulo 15Hz</button>
+
+  <div class="card">
+    <div class="conteudo">
+
+      <!-- QUIZ -->
+      <div class="quiz">
+        <h2 id="pergunta">Carregando...</h2>
+        <div id="opcoes"></div>
+        <p id="feedback"></p>
+        <button id="nextBtn">Próxima</button>
+
+        <div class="stats">
+          Acertos: <span id="acertos">0</span> | 
+          Erros: <span id="erros">0</span>
+        </div>
+      </div>
+
+      <!-- GRÁFICO -->
+      <div class="grafico-container">
+        <canvas id="grafico" width="220" height="160"></canvas>
+
+        <p class="legenda-grafico">
+          Linha de desempenho (verde = acertos, vermelho = erros)
+        </p>
+
+        <p class="percentual-acertos">
+          Percentual de acertos: <span id="percentual">0%</span>
+        </p>
+
+        <p class="legenda-cientifica">
+          Sistema adaptativo baseado em neuroplasticidade.
+        </p>
+      </div>
+
+      <!-- TIMER DISCRETO -->
+      <div class="timer-discreto">
+        Tempo restante: <span id="timer">00:00</span>
+      </div>
+
+      <!-- MENSAGEM FINAL -->
+      <div id="mensagemFinal" style="display:none; font-weight:bold; text-align:center; margin-top:10px; color:#38bdf8;"></div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ÁUDIO 15Hz -->
+<audio id="audio15hz" loop>
+  <source src="../html/music/15hz.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
